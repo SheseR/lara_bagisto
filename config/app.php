@@ -126,7 +126,7 @@ return [
     |
     */
 
-    'key' => env('APP_KEY'),
+    'key' => 'base64:+w9zDGllOyKyfQEBDp9j4mCaNMIj+LH+rjG9KprWVgI=',
 
     'cipher' => 'AES-256-CBC',
 
@@ -247,7 +247,10 @@ return [
         Webkul\Rule\Providers\RuleServiceProvider::class,
         Webkul\CartRule\Providers\CartRuleServiceProvider::class,
         Webkul\CatalogRule\Providers\CatalogRuleServiceProvider::class,
-        Webkul\CMS\Providers\CMSServiceProvider::class
+        Webkul\CMS\Providers\CMSServiceProvider::class,
+
+        // My package
+        Upcamp\Product\Providers\ProductServiceProvider::class,
     ],
 
     /*
